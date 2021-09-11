@@ -15,7 +15,6 @@ import { TimerComponent } from './timer/timer.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { SubnetComponent } from './subnet/subnet.component';
 import { SubnetsComponent } from './subnets/subnets.component';
-import { BinariesComponent } from './binaries/binaries.component';
 import { BinaryComponent } from './binary/binary.component';
 import { OutputComponent } from './output/output.component';
 import { ByteComponent } from './byte/byte.component';
@@ -29,7 +28,6 @@ import { OutputsComponent } from './outputs/outputs.component';
     TimerComponent,
     SubnetComponent,
     SubnetsComponent,
-    BinariesComponent,
     BinaryComponent,
     OutputComponent,
     ByteComponent,
