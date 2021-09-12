@@ -7,9 +7,11 @@ import { Ip } from '../ip';
   styleUrls: ['./subnet.component.scss']
 })
 export class SubnetComponent implements OnInit {
-  @Input() ip!: Ip;
+  @Input()  binaryIP!: Array<Array<number>>;
 
-  constructor() { }
+  constructor() {
+
+   }
 
   ngOnInit(): void {
   }
