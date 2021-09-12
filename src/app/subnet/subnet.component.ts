@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Ip } from '../ip';
 
 @Component({
   selector: 'app-subnet',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./subnet.component.scss']
 })
 export class SubnetComponent implements OnInit {
+  @Input() ip!: Ip;
 
   constructor() { }
 

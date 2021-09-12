@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Ip } from '../ip';
 
 @Component({
   selector: 'app-byte',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./byte.component.scss']
 })
 export class ByteComponent implements OnInit {
-
+@Input() ip!: Ip;
   constructor() { }
 
   ngOnInit(): void {

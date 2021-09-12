@@ -1,27 +1,15 @@
 import { Component } from '@angular/core';
+import * as internal from 'stream';
+import { Ip } from './ip';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-
-  powers = ['Really Smart', 'Super Flexible', 'Weather Changer'];
-
-  hero = {name: 'Dr.', alterEgo: 'Dr. What', power: this.powers[0]};
-
-  private _title : string;
-
+  ip: Ip;
   constructor() {
-    this._title = "hello";
-
+    this.ip = new Ip();
   }
-
-  public get title() : string {
-    return this._title;
-  }
-  public set title(v : string) {
-    this._title = v;
-  }
-
 }
+

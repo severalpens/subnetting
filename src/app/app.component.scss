@@ -6,6 +6,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.progress-bar{
+  width: 200px;
+  margin: auto;
+}
+
 /* Style the header */
 header {
   background-color: #666;
@@ -64,4 +69,10 @@ footer {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
+}
+
+
+a{
+  text-decoration: inherit;
+  color: inherit;
 }
