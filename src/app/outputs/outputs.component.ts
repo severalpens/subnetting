@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Ip } from '../ip';
+import { Network } from '../network';
 
 @Component({
   selector: 'app-outputs',
@@ -7,8 +7,8 @@ import { Ip } from '../ip';
   styleUrls: ['./outputs.component.scss']
 })
 export class OutputsComponent implements OnInit {
-  @Input() ip!: Ip;
-  
+  @Input() ip!: Network;
+
   constructor() { }
 
   ngOnInit(): void {

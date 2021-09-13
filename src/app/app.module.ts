@@ -20,6 +20,8 @@ import { OutputComponent } from './output/output.component';
 import { ByteComponent } from './byte/byte.component';
 import { BitComponent } from './bit/bit.component';
 import { OutputsComponent } from './outputs/outputs.component';
+import { MainComponent } from './main/main.component';
+import { PreComponent } from './pre/pre.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { OutputsComponent } from './outputs/outputs.component';
     ByteComponent,
     BitComponent,
     OutputsComponent,
+    MainComponent,
+    PreComponent,
   ],
   imports: [
     BrowserModule,

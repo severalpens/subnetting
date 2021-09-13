@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
-import * as internal from 'stream';
-import { Ip } from './ip';
+import {IP, Network, Mask, Subnet } from './network';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  ip: Ip;
+  network: Network;
   constructor() {
-    this.ip = new Ip();
+    this.network = new Network();
   }
 }
 

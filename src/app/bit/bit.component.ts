@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Ip } from '../ip';
+import { Network } from '../network';
 
 @Component({
   selector: 'app-bit',
@@ -7,7 +7,7 @@ import { Ip } from '../ip';
   styleUrls: ['./bit.component.scss']
 })
 export class BitComponent implements OnInit {
-  @Input() ip!: Ip;
+  @Input() ip!: Network;
 
   constructor() { }
 
