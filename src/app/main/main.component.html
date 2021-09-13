@@ -1,17 +1,14 @@
 <main>
   <header class="header">
     <h2>Subnetting</h2>
-    <h4>192.168.0.1/24</h4>
-    <h5>
-      Subnets required: 3
-    </h5>
+    <h4>{{network.ip.intDecimalOctets[0]}}.{{network.ip.intDecimalOctets[1]}}.{{network.ip.intDecimalOctets[2]}}.{{network.ip.intDecimalOctets[3]}}/{{network.cidr}}.</h4>
     <div class="progress-bar">
       <mat-progress-bar  mode="determinate" value="40"></mat-progress-bar>
     </div>
   </header>
   <section>
     <article>
-      <app-subnets [ip]="ip"></app-subnets>
+      <app-subnets></app-subnets>
       <app-outputs></app-outputs>
     </article>
   </section>
@@ -19,3 +16,13 @@
     <p><a href="https://severalpens.com">severalpens.com</a></p>
   </footer>
 </main>
+<div>
+
+  {{network.ip.strBinaryOctets[0]}}
+  <br>
+  {{network.ip.strBinaryOctets[1]}}
+  <br>
+  {{network.ip.strBinaryOctets[2]}}
+
+</div>
+

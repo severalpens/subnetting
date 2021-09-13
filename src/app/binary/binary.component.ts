@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Network } from '../network';
+import { IBitGroup, Network } from '../network';
+import { NetworkService } from '../network.service';
 
 @Component({
   selector: 'app-binary',
@@ -7,11 +8,20 @@ import { Network } from '../network';
   styleUrls: ['./binary.component.scss']
 })
 export class BinaryComponent implements OnInit {
-  @Input() ip!: Network;
+  @Input() type!: string;
+  network: Network;
+  bitGroup!: IBitGroup;
+  constructor(private networkService: NetworkService) {
+    this.network = networkService.network;
 
-  constructor() { }
-
-  ngOnInit(): void {
   }
+  ngOnInit(): void {
+    console.log(this.type)
+    this.type === "ip" ? this.bitGroup = this.network.ip : null;
+    this.type === "mask" ? this.bitGroup = this.network.mask : null;
+    this.type === "subnet" ? this.bitGroup = this.network.subnet : null;
+  }
+
+
 
 }

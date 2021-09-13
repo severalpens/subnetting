@@ -1,6 +1,6 @@
-<div style="display:flex; flex-direction: row;">
-  <app-byte id="byte0" name="byte0" class="byte" [ip]="ip"></app-byte>.
-  <app-byte id="byte1" name="byte1" class="byte" [ip]="ip"></app-byte>.
-  <app-byte id="byte2" name="byte2" class="byte" [ip]="ip"></app-byte>.
-  <app-byte id="byte3" name="byte3" class="byte" [ip]="ip"></app-byte>
+<div *ngIf="type" style="display:flex; flex-direction: row;">
+  <app-byte id="byte0" name="byte0" class="byte" [byte]="bitGroup.arrIntBinaryOctets[0]"></app-byte>.
+  <app-byte id="byte1" name="byte1" class="byte" [byte]="bitGroup.arrIntBinaryOctets[1]"></app-byte>.
+  <app-byte id="byte2" name="byte2" class="byte" [byte]="bitGroup.arrIntBinaryOctets[2]"></app-byte>.
+  <app-byte id="byte3" name="byte3" class="byte" [byte]="bitGroup.arrIntBinaryOctets[3]"></app-byte>
 </div>

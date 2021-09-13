@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {IP, Network, Mask, Subnet } from './network';
+import { NetworkService } from './network.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,8 +8,8 @@ import {IP, Network, Mask, Subnet } from './network';
 })
 export class AppComponent {
   network: Network;
-  constructor() {
-    this.network = new Network();
+  constructor(private networkService: NetworkService) {
+    this.network = networkService.network;
   }
 }
 

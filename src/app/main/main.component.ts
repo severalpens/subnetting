@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Network } from '../network';
+import { NetworkService } from '../network.service';
 
 @Component({
   selector: 'app-main',
@@ -7,9 +8,9 @@ import { Network } from '../network';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent {
-  ip: Network;
-  constructor() {
-    this.ip = new Network();
+  network: Network;
+  constructor(private networkService: NetworkService) {
+    this.network = networkService.network;
   }
 }
 

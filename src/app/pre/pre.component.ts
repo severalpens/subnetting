@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Network } from '../network';
+import { NetworkService } from '../network.service';
 
 @Component({
   selector: 'app-pre',
@@ -8,8 +9,8 @@ import { Network } from '../network';
 })
 export class PreComponent {
   network: Network;
-  constructor() {
-    this.network = new Network();
+  constructor(private networkService: NetworkService) {
+    this.network = networkService.network;
   }
 
 }
