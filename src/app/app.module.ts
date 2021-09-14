@@ -22,6 +22,7 @@ import { BitComponent } from './bit/bit.component';
 import { OutputsComponent } from './outputs/outputs.component';
 import { MainComponent } from './main/main.component';
 import { PreComponent } from './pre/pre.component';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { PreComponent } from './pre/pre.component';
     CommonModule,
     FormsModule,
     MatGridListModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
