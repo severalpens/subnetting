@@ -1,0 +1,39 @@
+div{
+  border-style: solid;
+  border-width: 2px;
+}
+
+.navbar{
+  display: flex;
+}
+
+.nav{
+
+}
+
+.inputs{
+  display:flex;
+}
+
+.input{
+
+}
+
+.input-item{
+
+}
+
+.subnets{
+  display:flex;
+}
+
+.subnet{
+
+}
+
+.subnet-item{
+
+}
+
+
+
