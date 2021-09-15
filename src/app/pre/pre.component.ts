@@ -3,15 +3,15 @@ import { NetworkProps, Network } from '../network';
 import { NetworkService } from '../network.service';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  selector: 'app-pre',
+  templateUrl: './pre.component.html',
+  styleUrls: ['./pre.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class PreComponent implements OnInit {
   network: Network
   constructor(networkService: NetworkService) {
     this.network = networkService.network;
-  }
+   }
 
   ngOnInit(): void {
   }

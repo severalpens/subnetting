@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
-import { Network } from './network';
+import { NetworkProps, Network } from './network';
 
 @Injectable({
   providedIn: 'root'
 })
 export class NetworkService {
-  network: Network;
+  network: Network
   constructor() {
-    this.network = new Network();
+    let props = new NetworkProps();
+    this.network = new Network(props);
    }
 }

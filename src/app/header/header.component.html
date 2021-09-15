@@ -1,7 +1,20 @@
 
 <div class="header">
-  <div class="header-item">
-    192.164.80.16/24
+  <div>
 
+    <div class="header-item">
+      {{network.ip.ipIntegersArray[0]}}.
+      {{network.ip.ipIntegersArray[1]}}.
+      {{network.ip.ipIntegersArray[2]}}.
+      {{network.ip.ipIntegersArray[3]}}/
+      {{network.cidr}}
+    </div>
+    <div class="subheader-item">
+      Number of Subnets: <select disabled name="numberOfSubnets" id="numberOfSubnets">
+        <option selected value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </div>
   </div>
 </div>

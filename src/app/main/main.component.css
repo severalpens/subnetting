@@ -3,6 +3,10 @@ div{
   border-width: 2px;
 }
 
+.td-right{
+  text-align: right;
+}
+
 .navbar{
   display: flex;
 }
@@ -19,15 +23,21 @@ div{
 
 }
 
+.td0{
+  width: 180px;
+  font-weight: 200;
+}
+
 .input-item{
 
 }
 
 .subnets{
-  display:flex;
+  margin-bottom: 500px;
 }
 
 .subnet{
+  font-family: monospace;
 
 }
 

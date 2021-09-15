@@ -3,13 +3,17 @@
 .header{
   display: flex;
 justify-content: center;
+margin-bottom: 20px;
 }
 
 .header-item{
   font-family: 'Rubik', sans-serif;
   font-size: 20pt;
-  width: 200px;
-  border-style: solid;
-  border-width: 2px;
+  width: 300px;
+  margin-right: 20px;
+}
+.subheader-item{
+  font-family: 'monospace';
+  width: 300px;
   margin-right: 20px;
 }

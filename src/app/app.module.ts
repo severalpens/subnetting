@@ -21,6 +21,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SubnetsComponent } from './subnets/subnets.component';
 import { SubnetComponent } from './subnet/subnet.component';
+import { PreComponent } from './pre/pre.component';
 
 
 
@@ -34,7 +35,8 @@ import { SubnetComponent } from './subnet/subnet.component';
     FooterComponent,
     NavbarComponent,
     SubnetsComponent,
-    SubnetComponent
+    SubnetComponent,
+    PreComponent
   ],
   imports: [
     BrowserModule,
