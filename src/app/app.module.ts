@@ -19,9 +19,9 @@ import { MainComponent } from './main/main.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { SubnetsComponent } from './subnets/subnets.component';
-import { SubnetComponent } from './subnet/subnet.component';
 import { PreComponent } from './pre/pre.component';
+import { SubnetComponent } from './subnet/subnet.component';
+import { SettingsComponent } from './settings/settings.component';
 
 
 
@@ -34,9 +34,9 @@ import { PreComponent } from './pre/pre.component';
     HeaderComponent,
     FooterComponent,
     NavbarComponent,
-    SubnetsComponent,
+    PreComponent,
     SubnetComponent,
-    PreComponent
+    SettingsComponent
   ],
   imports: [
     BrowserModule,

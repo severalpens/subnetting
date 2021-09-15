@@ -1,49 +1,13 @@
 div{
-  border-style: solid;
-  border-width: 2px;
 }
 
-.td-right{
-  text-align: right;
-}
 
-.navbar{
+.container{
+
   display: flex;
-}
-
-.nav{
-
-}
-
-.inputs{
-  display:flex;
-}
-
-.input{
-
-}
-
-.td0{
-  width: 180px;
-  font-weight: 200;
-}
-
-.input-item{
-
+  justify-content: center;
 }
 
 .subnets{
-  margin-bottom: 500px;
 }
-
-.subnet{
-  font-family: monospace;
-
-}
-
-.subnet-item{
-
-}
-
-
 
