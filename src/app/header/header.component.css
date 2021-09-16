@@ -15,5 +15,6 @@ margin-bottom: 20px;
 .subheader-item{
   font-family: 'monospace';
   width: 300px;
+  margin-top: 10px;
   margin-right: 20px;
 }

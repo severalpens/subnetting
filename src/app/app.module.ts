@@ -23,6 +23,8 @@ import { PreComponent } from './pre/pre.component';
 import { SubnetComponent } from './subnet/subnet.component';
 import { SettingsComponent } from './settings/settings.component';
 import { AboutComponent } from './about/about.component';
+import { FlsmComponent } from './flsm/flsm.component';
+import { VlsmComponent } from './vlsm/vlsm.component';
 
 
 
@@ -38,7 +40,9 @@ import { AboutComponent } from './about/about.component';
     PreComponent,
     SubnetComponent,
     SettingsComponent,
-    AboutComponent
+    AboutComponent,
+    FlsmComponent,
+    VlsmComponent
   ],
   imports: [
     BrowserModule,
