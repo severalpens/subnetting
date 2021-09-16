@@ -18,17 +18,18 @@ export class Network{
   ip:IAddress;
   cidr: number;
   mask:IAddress;
-  subnets:Array<Subnet>;
+  subnetAddress:IAddress;
+  hostAddress:IAddress;
+  broadcastAddress:IAddress;
 
   constructor(props:NetworkProps){
     this.ip = new NetworkIP(props.ipIntegersArray);
     this.cidr = props.cidr;
     this.mask = new Mask(this.cidr);
-    this.subnets  = new Array<Subnet>();
 
-    for (let i = 0; i < props.numberOfSubnets; i++) {
-      this.subnets.push(new Subnet(i,this.ip, this.cidr, this.mask));
-    }
+    this.subnetAddress  = new SubnetAddress(this.ip.ipBinaryArray,this.mask.ipBinaryArray);
+    this.hostAddress = new HostAddress(this.ip.ipBinaryArray,this.mask.ipBinaryArray);
+    this.broadcastAddress  = new BroadcastAddress(this.ip.ipBinaryArray,this.mask.ipBinaryArray);
   }
 
 }

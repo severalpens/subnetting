@@ -22,6 +22,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { PreComponent } from './pre/pre.component';
 import { SubnetComponent } from './subnet/subnet.component';
 import { SettingsComponent } from './settings/settings.component';
+import { AboutComponent } from './about/about.component';
 
 
 
@@ -36,7 +37,8 @@ import { SettingsComponent } from './settings/settings.component';
     NavbarComponent,
     PreComponent,
     SubnetComponent,
-    SettingsComponent
+    SettingsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
